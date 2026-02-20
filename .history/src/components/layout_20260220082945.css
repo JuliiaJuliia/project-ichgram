@@ -1,9 +1,0 @@
-<main className={`appMain ${isOpen ? "dimmed" : ""}`}>
-  <div className="appContainer">
-    <div className="appContent">
-      {children}
-    </div>
-
-    <Footer onOpenPanel={openPanel} />
-  </div>
-</main>
