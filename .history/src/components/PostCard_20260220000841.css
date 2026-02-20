@@ -1,0 +1,56 @@
+.postCard{
+    width: 100%;
+    background: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    margin-bottom: 26px;
+    overflow: hidden;
+  }
+  
+  /* верх (аватар + имя) */
+  .postHeader{
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    gap: 10px;
+  }
+  
+  .postAvatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .postUsername{
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  /* САМА ФОТОГРАФИЯ */
+  .postImage{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* иконки */
+  .postActions{
+    display: flex;
+    gap: 14px;
+    padding: 10px 14px;
+    font-size: 22px;
+  }
+  
+  /* лайки */
+  .postLikes{
+    padding: 0 14px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  /* текст */
+  .postCaption{
+    padding: 6px 14px 12px 14px;
+    font-size: 14px;
+  }

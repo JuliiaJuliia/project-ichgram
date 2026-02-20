@@ -1,0 +1,35 @@
+.feed{
+    width: 100%;
+    display: grid;
+    gap: 32px;
+  
+    /* центрирование */
+    justify-content: center;
+  
+    /* большие экраны */
+    grid-template-columns: repeat(2, minmax(420px, 620px));
+  }
+  
+  /* ноутбук */
+  @media (max-width: 1300px){
+    .feed{
+      grid-template-columns: repeat(2, minmax(360px, 1fr));
+    }
+  }
+  
+  /* планшет */
+  @media (max-width: 900px){
+    .feed{
+      grid-template-columns: 1fr;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* телефон */
+  @media (max-width: 520px){
+    .feed{
+      gap: 18px;
+      padding: 0 6px;
+    }
+  }

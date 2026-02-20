@@ -1,0 +1,32 @@
+/* src/components/Feed.css */
+
+.feed {
+    /* ВАЖНО: фиксируем ширину всей сетки (2 карточки + gap) */
+    width: 100%;
+    max-width: 1068px;          /* 520 + 520 + gap(28) = 1068 */
+    margin: 0 auto;
+  
+    display: grid;
+    gap: 28px;
+  
+    /* 2 колонки на большом экране */
+    grid-template-columns: repeat(2, minmax(320px, 520px));
+    justify-content: center;
+  }
+  
+  /* маленький ноут/планшет — 1 колонка */
+  @media (max-width: 1100px) {
+    .feed {
+      max-width: 520px;
+      grid-template-columns: minmax(320px, 520px);
+    }
+  }
+  
+  /* телефон */
+  @media (max-width: 520px) {
+    .feed {
+      max-width: 100%;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+  }

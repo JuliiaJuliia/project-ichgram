@@ -1,0 +1,213 @@
+:root{
+    --sb-w: 240px;
+    --sb-w-collapsed: 72px;
+  
+    --ig-bg: #ffffff;
+    --ig-text: #111111;
+    --ig-muted: #737373;
+    --ig-line: #dbdbdb;
+  
+    --ig-hover: #f2f2f2;
+    --ig-active: #efefef;
+  
+    --ig-radius: 12px;
+    --ig-icon: 24px;
+  }
+  
+  /* Sidebar container */
+  .sidebar{
+    width: var(--sb-w);
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background: var(--ig-bg);
+    border-right: 1px solid var(--ig-line);
+    padding: 14px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 20;
+  }
+  
+  /* Logo */
+  .sidebar__logo{
+    display: flex;
+    align-items: center;
+    height: 54px;
+    padding: 0 10px;
+    font-weight: 900;
+    letter-spacing: .5px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .sidebar__logoText{
+    font-size: 18px;
+  }
+  
+  /* Nav list */
+  .sidebar__nav{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  /* Shared item styles for <a> and <button> */
+  .sidebar__item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  
+    padding: 10px 10px;
+    border-radius: var(--ig-radius);
+  
+    color: var(--ig-text);
+    text-decoration: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+  
+    transition: background .15s ease, transform .05s ease;
+  }
+  
+  .sidebar__item:hover{
+    background: var(--ig-hover);
+  }
+  
+  .sidebar__item:active{
+    transform: scale(0.995);
+  }
+  
+  /* Active (NavLink adds .active by default if you use it) */
+  .sidebar__item.active{
+    background: var(--ig-active);
+    font-weight: 700;
+  }
+  
+  /* Icon wrapper */
+  .sidebar__icon{
+    width: var(--ig-icon);
+    height: var(--ig-icon);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+  }
+  
+  /* If you use SVGs inside */
+  .sidebar__icon svg{
+    width: var(--ig-icon);
+    height: var(--ig-icon);
+    display: block;
+  }
+  
+  /* Label */
+  .sidebar__label{
+    flex: 1;
+    white-space: nowrap;
+  }
+  
+  /* Bottom area */
+  .sidebar__bottom{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  /* Profile row */
+  .sidebar__profile{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  
+    padding: 10px 10px;
+    border-radius: var(--ig-radius);
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--ig-text);
+  
+    transition: background .15s ease;
+  }
+  
+  .sidebar__profile:hover{
+    background: var(--ig-hover);
+  }
+  
+  .sidebar__avatar{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--ig-line);
+    background: #eee;
+    overflow: hidden;
+    flex: 0 0 auto;
+  }
+  
+  .sidebar__avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .sidebar__profileText{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+  
+  .sidebar__profileName{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .sidebar__profileSub{
+    font-size: 12px;
+    color: var(--ig-muted);
+    line-height: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Optional: small divider */
+  .sidebar__divider{
+    height: 1px;
+    background: var(--ig-line);
+    margin: 8px 8px;
+  }
+  
+  /* ---------- Responsive: collapse sidebar (optional) ---------- */
+  /* If you add class "sidebar--collapsed" to <aside className="sidebar sidebar--collapsed"> */
+  .sidebar.sidebar--collapsed{
+    width: var(--sb-w-collapsed);
+    padding: 14px 10px;
+  }
+  
+  .sidebar.sidebar--collapsed .sidebar__label,
+  .sidebar.sidebar--collapsed .sidebar__logoText,
+  .sidebar.sidebar--collapsed .sidebar__profileText{
+    display: none;
+  }
+  
+  .sidebar.sidebar--collapsed .sidebar__item,
+  .sidebar.sidebar--collapsed .sidebar__profile{
+    justify-content: center;
+  }
+  
+  /* Nice focus for accessibility */
+  .sidebar__item:focus-visible,
+  .sidebar__profile:focus-visible{
+    outline: 2px solid #a8d8ff;
+    outline-offset: 2px;
+  }

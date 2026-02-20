@@ -1,0 +1,21 @@
+/* src/components/Feed.css */
+
+.feed{
+    width: 100%;
+    display: grid;
+    gap: 28px;
+  
+    /* ✅ сама адаптация: 2 колонки если влезает, иначе 1 */
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  
+    /* чтобы контент был по центру */
+    justify-items: center;
+  }
+  
+  /* на очень узких экранах (телефон) уменьшаем минималку */
+  @media (max-width: 520px){
+    .feed{
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+  }

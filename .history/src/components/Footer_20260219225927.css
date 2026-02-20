@@ -1,0 +1,28 @@
+.footer{
+    width:100%;
+    margin-top:60px;
+    padding:40px 0;
+    text-align:center;
+    color:#8e8e8e;
+    font-size:13px;
+  }
+  
+  .footerLinks{
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    margin-bottom:18px;
+    flex-wrap:wrap;
+  }
+  
+  .footerLinks span{
+    cursor:pointer;
+  }
+  
+  .footerLinks span:hover{
+    text-decoration:underline;
+  }
+  
+  .footerCopy{
+    font-size:12px;
+  }

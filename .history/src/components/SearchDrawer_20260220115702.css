@@ -1,0 +1,80 @@
+.searchDrawer{
+    position: fixed;
+    top: 0;
+    left: 245px;
+    width: 360px;
+    height: 100vh;
+    background: white;
+    border-right: 1px solid #dbdbdb;
+    z-index: 80;
+  
+    transform: translateX(-110%);
+    transition: transform .25s ease;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .searchDrawer.open{
+    transform: translateX(0);
+  }
+  
+  .searchHeader{
+    padding: 18px;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .searchHeader h2{
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .searchClose{
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .searchInputBox{
+    padding: 14px;
+    border-bottom: 1px solid #efefef;
+  }
+  
+  .searchInputBox input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #dbdbdb;
+    background: #fafafa;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .searchResults{
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .searchUser{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .searchUser:hover{
+    background: #f2f2f2;
+  }
+  
+  .searchUser img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+  }

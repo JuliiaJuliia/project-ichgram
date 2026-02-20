@@ -1,0 +1,45 @@
+:root{
+    --sidebar-w: 245px;
+    --drawer-w: 420px;
+    --container-w: 1100px;
+  }
+  
+  /* оболочка */
+  .appShell{
+    min-height: 100vh;
+  }
+  
+  /* main зона (контент) */
+  .appMain{
+    margin-left: var(--sidebar-w);
+    min-height: 100vh;
+  }
+  
+  /* центрируем весь контент */
+  .appContainer{
+    max-width: var(--container-w);
+    margin: 0 auto;
+    padding: 24px 16px;
+    width: 100%;
+  }
+  
+  /* если открыт drawer — добавляем место под него слева */
+  .appMain.dimmed{
+    margin-left: calc(var(--sidebar-w) + var(--drawer-w));
+  }
+  
+  /* overlay */
+  .overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 40;
+  }
+  
+  /* адаптив */
+  @media (max-width: 900px){
+    .appMain,
+    .appMain.dimmed{
+      margin-left: 0;
+    }
+  }

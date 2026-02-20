@@ -1,0 +1,140 @@
+.storiesBar{
+    width: 100%;
+    max-width: 1228px;     /* как в Feed */
+    margin: 0 auto 12px;
+    padding: 14px 12px;
+  
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 12px;
+  
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+  
+    /* сделаем липким сверху */
+    position: sticky;
+    top: 0;
+    z-index: 30;
+  
+}
+
+.story{
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.storyRing{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 2px;
+  background: #dbdbdb;
+  flex: 0 0 auto;
+}
+
+.storyRing.isNew{
+  background: conic-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #feda75);
+}
+
+.storyAvatar{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.storyMeta{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.storyUsername{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.storyFollowBtn{
+  border: none;
+  background: transparent;
+  color: #0095f6;
+  font-weight: 600;
+  padding: 0;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* src/components/Stories.css */
+
+.stories{
+  width: 100%;
+  max-width: 1268px;   /* чтобы совпадало по ширине с лентой */
+  margin: 0 auto;
+
+  padding: 12px 10px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+
+  /* ВОТ ЭТО делает "сверху" при скролле */
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+/* если нужно чуть больше — увеличь эти размеры */
+.storyAvatarWrapper{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 2px;
+  background: conic-gradient(#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5,#feda75);
+  flex: 0 0 auto;
+}
+
+.storyAvatar{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.storyItem{
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.storyInfo{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+
+.storyName{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.storyFollow{
+  color: #0095f6;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+.storyFollow.following{
+  color: #262626;
+}

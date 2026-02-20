@@ -1,0 +1,38 @@
+/* NotificationsDrawer.css */
+
+.notificationsDrawer {
+    position: fixed;
+    top: 0;
+    left: 245px;
+    width: 360px;
+    height: 100vh;
+    background: #fff;
+    border-right: 1px solid #dbdbdb;
+    z-index: 55;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    padding: 18px 16px;
+    box-sizing: border-box;
+  }
+  
+  .notificationsDrawer.open {
+    transform: translateX(0);
+  }
+  
+  .notificationsDrawerClose {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    border: 0;
+    background: transparent;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 900px) {
+    .notificationsDrawer {
+      left: 0;
+      width: 100%;
+      z-index: 80;
+    }
+  }

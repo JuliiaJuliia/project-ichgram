@@ -1,0 +1,27 @@
+/* 2 колонки на больших экранах, 1 колонка на маленьких */
+.feed{
+    width: 100%;
+    display: grid;
+    gap: 28px;
+  
+    /* центрируем сетку */
+    justify-content: center;
+  
+    /* 2 колонки, каждая тянется, но не больше 520px */
+    grid-template-columns: repeat(2, minmax(320px, 520px));
+  }
+  
+  /* когда места меньше — 1 колонка */
+  @media (max-width: 1100px){
+    .feed{
+      grid-template-columns: minmax(320px, 520px);
+    }
+  }
+  
+  /* телефон: колонка на всю ширину */
+  @media (max-width: 520px){
+    .feed{
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+  }

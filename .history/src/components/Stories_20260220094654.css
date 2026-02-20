@@ -1,0 +1,56 @@
+.stories{
+  width: 100%;
+  display: flex;
+  gap: 28px;
+  padding: 18px;
+  margin-bottom: 28px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 14px;
+  background: white;
+
+  overflow-x: auto;
+}
+
+/* один пользователь */
+.storyItem{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: max-content;
+}
+
+/* градиентный кружок */
+.storyAvatarWrapper{
+  padding: 3px;
+  border-radius: 50%;
+  background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+}
+
+/* фото */
+.storyAvatar{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+/* имя + follow */
+.storyInfo{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.storyName{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.storyFollow{
+  color: #0095f6;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+}

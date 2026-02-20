@@ -1,0 +1,52 @@
+:root{
+    --sidebar-w: 245px;
+    --line: #dbdbdb;
+  }
+  
+  .appShell{
+    min-height: 100vh;
+  }
+  
+  /* основной контент всегда после sidebar */
+  .appMain{
+    background: ;
+    min-height: 100vh;
+    padding-left: 245px;     /* место под sidebar */
+    display: flex;
+    justify-content: center; /* ← ВОТ ОНО ЦЕНТРИРУЕТ ВСЕ */
+  }
+  
+  /* центр + нормальные отступы слева/справа */
+  .appContainer{
+    width: 100%;
+    max-width: 1200px;  /* регулирует насколько большие посты */
+    padding: 24px 16px;
+    box-sizing: border-box;
+  }
+  
+  .pageContent{
+    flex: 1;
+  }
+  
+  /* затемнение когда открыт drawer */
+  .appMain.dimmed{
+    filter: brightness(.75);
+  }
+  
+  .overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.35);
+    z-index: 40;
+  }
+  
+  /* адаптив: на мобиле sidebar обычно должен меняться отдельно,
+     но хотя бы контент не будет отъезжать */
+  @media (max-width: 900px){
+    .appMain{
+      padding-left: 0;
+    }
+    .appContainer{
+      padding: 16px 12px;
+    }
+  }

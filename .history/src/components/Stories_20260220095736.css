@@ -1,0 +1,83 @@
+/* src/components/Feed.css */
+
+.feed {
+    /* ВАЖНО: фиксируем ширину всей сетки (2 карточки + gap) */
+    width: 100%;
+    max-width: 1068px;          /* 520 + 520 + gap(28) = 1068 */
+    margin: 0 auto;
+  
+    display: grid;
+    gap: 28px;
+  
+    /* 2 колонки на большом экране */
+    grid-template-columns: repeat(2, minmax(320px, 520px));
+    justify-content: center;
+  }
+  
+  /* маленький ноут/планшет — 1 колонка */
+  @media (max-width: 1100px) {
+    .feed {
+      max-width: 520px;
+      grid-template-columns: minmax(320px, 520px);
+    }
+  }
+  
+  /* телефон */
+  @media (max-width: 520px) {
+    .feed {
+      max-width: 100%;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+  }
+}
+
+.story{
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.storyRing{
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  padding: 2px;
+  background: #dbdbdb;
+  flex: 0 0 auto;
+}
+
+.storyRing.isNew{
+  background: conic-gradient(#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #feda75);
+}
+
+.storyAvatar{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.storyMeta{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.storyUsername{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.storyFollowBtn{
+  border: none;
+  background: transparent;
+  color: #0095f6;
+  font-weight: 600;
+  padding: 0;
+  cursor: pointer;
+  font-size: 13px;
+}

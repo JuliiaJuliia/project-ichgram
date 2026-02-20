@@ -1,0 +1,118 @@
+.createPage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+  }
+  
+  .createCard{
+    width: 100%;
+    max-width: 1228px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 12px;
+    padding: 18px 18px 16px;
+  }
+  
+  .createTitle{
+    margin: 0 0 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+  }
+  
+  .createForm{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .createCaption{
+    width: 100%;
+    min-height: 90px;
+    resize: vertical;
+    padding: 10px 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  /* настоящий input прячем */
+  .createFileHidden{
+    display: none;
+  }
+  
+  /* кликабельная зона */
+  .createFileBox{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  
+    padding: 12px;
+    border: 1px dashed #dbdbdb;
+    border-radius: 12px;
+  
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .createFileBox:hover{
+    background: #fafafa;
+  }
+  
+  .createChooseBtn{
+    border: 1px solid #dbdbdb;
+    background: #f7f7f7;
+    border-radius: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .createChooseBtn:hover{
+    background: #efefef;
+  }
+  
+  .createFileName{
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .createBtn{
+    align-self: flex-end;
+    padding: 10px 16px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    background: #f7f7f7;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .createBtn:hover{
+    background: #efefef;
+  }
+
+  /* TOAST уведомление */
+.toast{
+    position: fixed;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    background: #111;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease, transform .2s ease;
+  }
+  
+  .toast--show{
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }

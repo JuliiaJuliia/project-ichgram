@@ -1,0 +1,189 @@
+.postCard{
+    width:470px;
+    background:#fff;
+    border:1px solid #dbdbdb;
+    border-radius:12px;
+    margin-bottom:28px;
+    overflow:hidden;
+  }
+  
+  /* header */
+  .postHeader{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px;
+    font-weight:600;
+  }
+  
+  .postAvatar{
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    object-fit:cover;
+  }
+  
+  .postTime{
+    color:#8e8e8e;
+    font-weight:400;
+    font-size:14px;
+  }
+  
+  /* image */
+  .postImage{
+    width:100%;
+    height:auto;
+  }
+  
+  /* actions */
+  .postActions{
+    display:flex;
+    gap:16px;
+    font-size:26px;
+    padding:10px 14px;
+    cursor:pointer;
+  }
+  
+  .likeBtn{
+    transition:.2s;
+  }
+  
+  .likeBtn:hover{
+    transform:scale(1.15);
+  }
+  
+  .liked{
+    color:#ed4956;
+  }
+  
+  /* likes */
+  .postLikes{
+    font-weight:600;
+    padding:0 14px 6px;
+  }
+  
+  /* caption */
+  .postCaption{
+    padding:0 14px 8px;
+  }
+  
+  /* comments */
+  .postComments{
+    padding:0 14px;
+  }
+  
+  .comment{
+    margin-bottom:4px;
+  }
+  
+  /* add comment */
+  .addComment{
+    border-top:1px solid #efefef;
+    display:flex;
+  }
+  
+  .addComment input{
+    flex:1;
+    border:none;
+    padding:12px;
+    outline:none;
+    font-size:14px;
+  }
+  
+  .addComment button{
+    border:none;
+    background:transparent;
+    color:#0095f6;
+    font-weight:600;
+    padding:0 12px;
+    cursor:pointer;
+  }
+
+  .viewAllComments{
+    padding: 0 14px 8px;
+    color:#8e8e8e;
+    font-size:14px;
+    cursor: default;
+  }
+  
+  .commentInputRow{
+    border-top:1px solid #efefef;
+    display:flex;
+  }
+  
+  .commentInput{
+    width:100%;
+    border:none;
+    padding:12px 14px;
+    outline:none;
+    font-size:14px;
+  }
+
+  .viewAllComments--link{
+    cursor: pointer;
+    user-select: none;
+  }
+  .viewAllComments--link:hover{
+    text-decoration: underline;
+  }
+
+  /* HEADER */
+.postHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 14px;
+  }
+  
+  /* левая часть */
+  .postUserLeft{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  
+  /* аватар */
+  .postAvatar{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    object-fit:cover;
+  
+    /* Instagram сторис обводка */
+    padding:2px;
+    background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+  }
+  
+  /* текст */
+  .postUserInfo{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size:14px;
+  }
+  
+  .postUsername{
+    font-weight:600;
+  }
+  
+  .postDot{
+    color:#8e8e8e;
+  }
+  
+  .postTime{
+    color:#8e8e8e;
+  }
+  
+  /* FOLLOW кнопка */
+  .followBtn{
+    background:none;
+    border:none;
+    color:#0095f6;
+    font-weight:600;
+    cursor:pointer;
+    font-size:14px;
+  }
+  
+  .followBtn:hover{
+    color:#00376b;
+  }

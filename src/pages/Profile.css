@@ -1,0 +1,30 @@
+.profile-page {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+  }
+  
+  .profile-page input,
+  .profile-page textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .profile-page button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0095f6;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .profile-page button:hover {
+    background-color: #007bd7;
+  }
+  

@@ -1,0 +1,46 @@
+.appShell{
+    min-height: 100vh;
+  }
+  
+  /* основной контент сдвинут от фиксированного сайдбара */
+  .appMain{
+    margin-left: 245px;      /* sidebar */
+    min-height: 100vh;
+    
+  }
+  
+  /* контейнер: центр + ровные отступы */
+  .appContainer{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 20px;
+    box-sizing: border-box;
+  
+    /* чтобы футер был снизу */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* overlay */
+  .overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 40;
+  }
+  
+  /* затемнение контента */
+  .appMain.dimmed{
+    filter: brightness(0.8);
+  }
+  
+  /* ============ АДАПТИВ ============ */
+  
+  /* планшет: оставляем место, но можно сделать уже */
+  @media (max-width: 900px){
+    .appMain{
+      margin-left: 0; /* если сайдбар у тебя остаётся фиксированным — можно выключить его на мобиле */
+    }
+
+  }

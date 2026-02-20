@@ -1,0 +1,140 @@
+/* ===== КАРТОЧКА ПОСТА ===== */
+
+.postCard {
+    width: 100%;
+    max-width: 700px;          /* теперь карточка растягивается */
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  
+  /* ===== HEADER (аватар + имя + follow) ===== */
+  
+  .postHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 14px;
+  }
+  
+  .postUserLeft{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  
+  .postAvatar{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    object-fit:cover;
+  }
+  
+  .postUserInfo{
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  
+  .postUsername{
+    font-weight:600;
+    font-size:14px;
+  }
+  
+  .postTime{
+    color:#8e8e8e;
+    font-size:13px;
+  }
+  
+  .followBtn{
+    border:none;
+    background:transparent;
+    color:#0095f6;
+    font-weight:600;
+    cursor:pointer;
+    font-size:14px;
+  }
+  
+  
+  /* ===== ФОТО ===== */
+  
+  .postImage{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:cover;
+  }
+  
+  
+  /* ===== КНОПКИ (лайк/коммент) ===== */
+  
+  .postActions{
+    display:flex;
+    gap:16px;
+    padding:10px 14px 4px;
+    font-size:20px;
+  }
+  
+  .likeBtn{
+    cursor:pointer;
+  }
+  
+  .likeBtn.liked{
+    color:red;
+  }
+  
+  .commentBtn{
+    cursor:pointer;
+  }
+  
+  
+  /* ===== ЛАЙКИ И ОПИСАНИЕ ===== */
+  
+  .postLikes{
+    font-weight:600;
+    padding:0 14px;
+    margin-top:4px;
+    font-size:14px;
+  }
+  
+  .postCaption{
+    padding:6px 14px 2px;
+    font-size:14px;
+  }
+  
+  
+  /* ===== КОММЕНТАРИИ ===== */
+  
+  .viewAllComments{
+    padding:6px 14px;
+    font-size:13px;
+    color:#8e8e8e;
+    cursor:pointer;
+  }
+  
+  .postComments{
+    padding:0 14px 6px;
+    font-size:14px;
+  }
+  
+  .comment{
+    margin-top:4px;
+  }
+  
+  
+  /* ===== INPUT ===== */
+  
+  .commentInputRow{
+    border-top:1px solid #efefef;
+    padding:10px 14px;
+  }
+  
+  .commentInput{
+    width:100%;
+    border:none;
+    outline:none;
+    font-size:14px;
+  }

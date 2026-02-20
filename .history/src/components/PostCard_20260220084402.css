@@ -1,0 +1,66 @@
+.postCard{
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  
+  /* HEADER */
+  .postHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+  }
+  
+  .postUserLeft{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .postAvatar{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .postUserInfo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+  }
+  
+  .postUsername{
+    font-weight: 600;
+  }
+  
+  .postTime{
+    color: #8e8e8e;
+  }
+  
+  .followBtn{
+    border: none;
+    background: none;
+    color: #0095f6;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  /* ФОТО */
+  .postImage{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;        /* ⭐ ВАЖНО — квадрат как в Instagram */
+    object-fit: cover;        /* картинка НЕ ломается */
+  }
+  
+  /* ACTIONS */
+  .postActions{
+    display: flex;
+    gap: 14px;
+    padding: 10px 14px;
+    font-size: 20

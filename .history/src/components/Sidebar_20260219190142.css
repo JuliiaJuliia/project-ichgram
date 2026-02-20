@@ -1,0 +1,25 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: white;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.menu-item {
+  padding: 12px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.menu-item:hover {
+  font-weight: bold;
+}

@@ -1,0 +1,32 @@
+.feed{
+    width:100%;
+    display:grid;
+  
+    /* ВОТ МАГИЯ АДАПТИВА */
+    grid-template-columns: repeat(2, 1fr);
+    gap:32px;
+  }
+  
+  /* ноутбук */
+  @media (max-width:1200px){
+    .feed{
+      grid-template-columns: 1fr 1fr;
+      gap:24px;
+    }
+  }
+  
+  /* планшет */
+  @media (max-width:900px){
+    .feed{
+      grid-template-columns: 1fr;
+      max-width:600px;
+      margin:0 auto;
+    }
+  }
+  
+  /* телефон */
+  @media (max-width:520px){
+    .feed{
+      gap:18px;
+    }
+  }

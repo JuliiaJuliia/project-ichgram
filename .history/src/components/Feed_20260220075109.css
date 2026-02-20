@@ -1,0 +1,25 @@
+.feed {
+    width: 100%;
+  }
+  
+  /* ПО УМОЛЧАНИЮ: 2 колонки (2x2) */
+  .feedGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    gap: 24px;
+    width: 100%;
+  }
+  
+  /* когда экран меньше — 1 колонка */
+  @media (max-width: 900px) {
+    .feedGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* совсем маленький экран */
+  @media (max-width: 420px) {
+    .feedGrid {
+      gap: 16px;
+    }
+  }

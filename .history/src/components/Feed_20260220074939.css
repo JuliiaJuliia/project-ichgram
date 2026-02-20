@@ -1,0 +1,19 @@
+.feed {
+    width: 100%;
+  }
+  
+  /* сетка сама подстраивается под ширину экрана */
+  .feedGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+    width: 100%;
+  }
+  
+  /* телефон */
+  @media (max-width: 420px) {
+    .feedGrid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }

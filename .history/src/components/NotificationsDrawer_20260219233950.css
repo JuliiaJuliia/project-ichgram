@@ -1,0 +1,98 @@
+/* overlay уже есть в SearchDrawer.css, но пусть будет отдельно тоже */
+.drawerOverlay{
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:rgba(0,0,0,0.25);
+    z-index:60;
+  }
+  
+  .notifDrawer{
+    position:fixed;
+    top:0;
+    left:245px;
+    width:420px;
+    height:100vh;
+    background:#fff;
+    border-right:1px solid #dbdbdb;
+    z-index:55;
+    padding:20px 18px;
+    box-shadow: 8px 0 30px rgba(0,0,0,0.18);
+    animation: slideInLeft .28s ease forwards;
+}
+  @keyframes slideInRight{
+    from { transform: translateX(100%); }
+    to   { transform: translateX(0); }
+  }
+
+  @keyframes slideIn{
+    from{ transform:translateX(-30px); opacity:0; }
+    to{ transform:translateX(0); opacity:1; }
+  }
+  
+  .notifTitle{
+    font-size:26px;
+    font-weight:700;
+    margin-bottom:18px;
+  }
+  
+  .notifSection{
+    font-weight:700;
+    margin:10px 0 12px;
+  }
+  
+  .notifItem{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:10px 8px;
+    border-radius:10px;
+  }
+  
+  .notifItem:hover{
+    background:#f5f5f5;
+  }
+  
+  .notifAvatar{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:#d8d8d8;
+    flex:0 0 auto;
+  }
+  
+  .notifText{
+    flex:1;
+    font-size:14px;
+    color:#111;
+  }
+  
+  .notifText span{
+    color:#737373;
+    font-weight:400;
+    margin-left:6px;
+  }
+  
+  .notifThumb{
+    width:44px;
+    height:44px;
+    background:#d8d8d8;
+    border-radius:6px;
+    flex:0 0 auto;
+  }
+
+  .notificationAvatar{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    object-fit:cover;
+  }
+  
+  .notifThumb{
+    width:44px;
+    height:44px;
+    border-radius:8px;
+    object-fit:cover;
+    margin-left:auto;
+  }

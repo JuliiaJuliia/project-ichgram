@@ -1,0 +1,24 @@
+.app-container {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 260px;
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+}
+
+/* Главный контейнер как в Instagram */
+.main-content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* ВАЖНО — центр */
+}
+
+/* центр всей ленты */
+.feed{
+  width: 470px; /* точная ширина instagram */
+  margin-top: 20px;
+}

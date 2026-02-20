@@ -1,0 +1,35 @@
+.feed {
+    width: 100%;
+    display: grid;
+    gap: 28px;
+  
+    /* по центру контейнера */
+    justify-content: center;
+  
+    /* 2 колонки на большом экране */
+    grid-template-columns: repeat(2, minmax(320px, 520px));
+  }
+  
+  /* экран уже — 2 колонки, но уже карточки */
+  @media (max-width: 1200px) {
+    .feed {
+      grid-template-columns: repeat(2, minmax(280px, 1fr));
+      justify-content: stretch;
+    }
+  }
+  
+  /* планшет/маленький ноут — 1 колонка */
+  @media (max-width: 900px) {
+    .feed {
+      grid-template-columns: minmax(320px, 520px);
+      justify-content: center;
+    }
+  }
+  
+  /* телефон — 1 колонка во всю ширину */
+  @media (max-width: 520px) {
+    .feed {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+  }

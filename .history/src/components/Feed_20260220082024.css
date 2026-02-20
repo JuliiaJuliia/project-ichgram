@@ -1,0 +1,37 @@
+.footer{
+    width: 100%;
+    margin-top: 28px;
+    padding: 22px 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #737373;
+    font-size: 12px;
+  }
+  
+  .footerNav{
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footerNav a,
+  .footerNav button{
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: #737373;
+    cursor: pointer;
+    font: inherit;
+  }
+  
+  .footerNav a:hover,
+  .footerNav button:hover{
+    text-decoration: underline;
+  }
+  
+  .footerCopy{
+    color: #737373;
+  }

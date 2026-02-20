@@ -1,0 +1,7 @@
+.exploreGrid{
+    width: 900px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
